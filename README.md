@@ -7,15 +7,15 @@ module wise manner whihc can be replace without affecting other code.
 
 Feature :
 ===============================================================
-	Connectivity Module Selection.
-	Configuration Call.
-	Heartbeat Call.
-	Power Call.
-	Application Data Updation.
-	Sleep Mode handling.
-	Automatic Device Recovery.
-	Extrnal Flash memory handling.
-	10,000 Packet stored.
+	> Connectivity Module Selection.
+	> Configuration Call.
+	> Heartbeat Call.
+	> Power Call.
+	> Application Data Updation.
+	> Sleep Mode handling.
+	> Automatic Device Recovery.
+	> Extrnal Flash memory handling.
+	> 10,000 Packet stored.
 
 Plateform:
 ==============================================================
