@@ -7,26 +7,26 @@ module wise manner whihc can be replace without affecting other code.
 
 Feature :
 ===============================================================
-Connectivity Module Selection.
-Configuration Call.
-Heartbeat Call.
-Power Call.
-Application Data Updation.
-Sleep Mode handling.
-Automatic Device Recovery.
-Extrnal Flash memory handling.
-10,000 Packet stored.
+	Connectivity Module Selection.
+	Configuration Call.
+	Heartbeat Call.
+	Power Call.
+	Application Data Updation.
+	Sleep Mode handling.
+	Automatic Device Recovery.
+	Extrnal Flash memory handling.
+	10,000 Packet stored.
 
 Plateform:
 ==============================================================
-Microcontroller 	: MSP430FR5969
-Connectivity Module 	: SIM800/868
-Language        	: Embedded C
-Internet Protocols 	: HTTP/HTTPS,MQTT/MQTTS,TCP/SSL.
-Size            	: 40KB flash ,1.5KB RAM.
-Requirement     	: 1-UART 0(connected with modem)
-                          2-TIMER 1,2(used in IOT APP SDK)
-                          1-SPI FLASH.(optional for data storage)
+	Microcontroller 	: MSP430FR5969
+	Connectivity Module 	: SIM800/868
+	Language        	: Embedded C
+	Internet Protocols 	: HTTP/HTTPS,MQTT/MQTTS,TCP/SSL.
+	Size            	: 40KB flash ,1.5KB RAM.
+	Requirement     	: 1-UART 0(connected with modem)
+				  2-TIMER 1,2(used in IOT APP SDK)
+				  1-SPI FLASH.(optional for data storage)
 
 
 
