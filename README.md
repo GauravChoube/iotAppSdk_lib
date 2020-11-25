@@ -114,94 +114,94 @@ Generally,Its categories as three Section as follow.
  
 HOW TO USE IT.
 ============================================================
-Config.h and cellularModuleConfig.h file need to setup before uploading.
-These decide working sequence of IOT APP SDK,setup carefully.
+	Config.h and cellularModuleConfig.h file need to setup before uploading.
+	These decide working sequence of IOT APP SDK,setup carefully.
 
-cellularModuleConfig.h:
------------------------
-1.Set each MACRO in cellularModuleConfig.h which set hardware interface with cellular modem.
-  Properly mentioned peripheral number not a address.
-2.Set APN of SIM in cellularModuleConfig.h.
-3.Select Type of network mode(2G/3G/4G/NBIOT - depend cellular modem).
-4.Set size of cellularBuffer(must be more than 700 byte).
+	cellularModuleConfig.h:
+	-----------------------
+	1.Set each MACRO in cellularModuleConfig.h which set hardware interface with cellular modem.
+	  Properly mentioned peripheral number not a address.
+	2.Set APN of SIM in cellularModuleConfig.h.
+	3.Select Type of network mode(2G/3G/4G/NBIOT - depend cellular modem).
+	4.Set size of cellularBuffer(must be more than 700 byte).
 
         
-Config.h
----------
-1.Hardcoded the project firmware.
+	Config.h
+	---------
+	1.Hardcoded the project firmware.
 
-2.Enabling the debug message by defining Debug_Enable(setup debug uart).
+	2.Enabling the debug message by defining Debug_Enable(setup debug uart).
 
-3.Define connectivity module to be used in project
-	  Two option are there
-	  # CELLULAR_MODULE
-	  # WIFI_MODULE(Coming soon).
-  
-4.Set HARDCODE VALUE depend on project.
- 	 # HARDCODED_DEV_ID
-	 # HARDCODED_MQTT_CREDENTIAL
-	 # HARDCODED_MQTT_DEV_ID
-	 # OW_MQTT_CLOUD
-	 # THINGSBOARD
-	 # HIVEMQ
-	 # CONFIG_CALL_ENABLE
-	 # CONFIG_TIME_HARDCODED
-	 # SLEEP_MODE_ENABLE
-	 
-5.Select the Connection Call Type that enable respective stack eventually cause memory.
-	 #DATA_CALL_TYPE
-     #CONFIG_CALL_TYPE
-     
-6.Select the Mode of protocol Stack.There are three option avail for all protocols
-  as over AT command,over PPP protocols,over TCP/SSL protocols.
-   1.FOR HTTP STACK
-   # HTTP_OVER_AT
-   # HTTP_OVER_TCP
-   # HTTP_OVER_PPP
+	3.Define connectivity module to be used in project
+		  Two option are there
+		  # CELLULAR_MODULE
+		  # WIFI_MODULE(Coming soon).
 
-   2.FOR HTTPS STACK
-   # HTTPS_OVER_AT
-   # HTTPS_OVER_SSL
-   # HTTPS_OVER_PPP
+	4.Set HARDCODE VALUE depend on project.
+		 # HARDCODED_DEV_ID
+		 # HARDCODED_MQTT_CREDENTIAL
+		 # HARDCODED_MQTT_DEV_ID
+		 # OW_MQTT_CLOUD
+		 # THINGSBOARD
+		 # HIVEMQ
+		 # CONFIG_CALL_ENABLE
+		 # CONFIG_TIME_HARDCODED
+		 # SLEEP_MODE_ENABLE
 
-   3.FOR MQTT STACK
-   # MQTT_OVER_AT
-   # MQTT_OVER_TCP
-   # MQTT_OVER_PPP
+	5.Select the Connection Call Type that enable respective stack eventually cause memory.
+		 #DATA_CALL_TYPE
+	     #CONFIG_CALL_TYPE
 
-   4.FOR MQTTS STACK
-   # MQTTS_OVER_AT
-   # MQTTS_OVER_SSL
-   # MQTTS_OVER_PPP
-  
- 7. Setup config call credential which must be fill if enable  
-	# CONFIG_URL                   	
-	# CONFIG_URL_PATH                
-	# CONFIG_USERNAME                 
-	# CONFIG_PASSWORD                 
-	# CONFIG_AUTH_KEY                           
+	6.Select the Mode of protocol Stack.There are three option avail for all protocols
+	  as over AT command,over PPP protocols,over TCP/SSL protocols.
+	   1.FOR HTTP STACK
+	   # HTTP_OVER_AT
+	   # HTTP_OVER_TCP
+	   # HTTP_OVER_PPP
 
- 8. Setup hardcode id if needed.
- 
-Once both file fill with proper information, device start connecting to provision cloud,get
-setting and start uploading data.
+	   2.FOR HTTPS STACK
+	   # HTTPS_OVER_AT
+	   # HTTPS_OVER_SSL
+	   # HTTPS_OVER_PPP
+
+	   3.FOR MQTT STACK
+	   # MQTT_OVER_AT
+	   # MQTT_OVER_TCP
+	   # MQTT_OVER_PPP
+
+	   4.FOR MQTTS STACK
+	   # MQTTS_OVER_AT
+	   # MQTTS_OVER_SSL
+	   # MQTTS_OVER_PPP
+
+	 7. Setup config call credential which must be fill if enable  
+		# CONFIG_URL                   	
+		# CONFIG_URL_PATH                
+		# CONFIG_USERNAME                 
+		# CONFIG_PASSWORD                 
+		# CONFIG_AUTH_KEY                           
+
+	 8. Setup hardcode id if needed.
+
+	Once both file fill with proper information, device start connecting to provision cloud,get
+	setting and start uploading data.
 
 
 SAMPLE
 ========================================================================
-iotAPPSdk come with default sample code where its connecting thigsboard cloud.
-iotAPPSdk send config call request and get setting. Depend on setting parameter,
-sdk form packet sample and send to same cloud at given internal in setting.
+	iotAPPSdk come with default sample code where its connecting thigsboard cloud.
+	iotAPPSdk send config call request and get setting. Depend on setting parameter,
+	sdk form packet sample and send to same cloud at given internal in setting.
 
-Please visit below link to configure setting for config call as well as monitor
-sample data.
+	Please visit below link to configure setting for config call as well as monitor
+	sample data.
 
-cloud Plateforma
------------------
-link: https://cloud.gciot.tk:/dashboard/daa2ed00-11dc-11eb-af3c-696883eb4ab8?publicId=1cbc82d0-00e1-11eb-af3c-696883eb4ab8
+	cloud Plateforma
+	-----------------
+	link: https://cloud.gciot.tk:/dashboard/daa2ed00-11dc-11eb-af3c-696883eb4ab8?publicId=1cbc82d0-00e1-11eb-af3c-696883eb4ab8
 
-Device id: Device 1
-username : Device 1
-password : (empty)
-Protocols: HTTPS
+	Device id: Device 1
+	username : Device 1
+	password : (empty)
+	Protocols: HTTPS
 =============================================================================================================
