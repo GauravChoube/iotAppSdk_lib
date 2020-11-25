@@ -196,9 +196,9 @@ SAMPLE
 	Please visit below link to configure setting for config call as well as monitor
 	sample data.
 
-	cloud Plateforma
-	-----------------
-	link: https://cloud.gciot.tk:/dashboard/daa2ed00-11dc-11eb-af3c-696883eb4ab8?publicId=1cbc82d0-00e1-11eb-af3c-696883eb4ab8
+cloud Plateforma
+-----------------
+link: https://cloud.gciot.tk:/dashboard/daa2ed00-11dc-11eb-af3c-696883eb4ab8?publicId=1cbc82d0-00e1-11eb-af3c-696883eb4ab8
 
 	Device id: Device 1
 	username : Device 1
