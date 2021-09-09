@@ -198,7 +198,7 @@ SAMPLE
 
 Cloud Plateform
 -----------------
-link: https://cloud.gciot.tk:/dashboard/daa2ed00-11dc-11eb-af3c-696883eb4ab8?publicId=1cbc82d0-00e1-11eb-af3c-696883eb4ab8
+link: https://cloud.gciot.in/dashboard/daa2ed00-11dc-11eb-af3c-696883eb4ab8?publicId=1cbc82d0-00e1-11eb-af3c-696883eb4ab8
 
 	Device id: Device 1
 	username : Device 1
